@@ -1,4 +1,7 @@
 # Text Scroll Animation
+
+![alt text](image.png)
+
 ## Description
 This project showcases dynamic text display techniques using Next.js and Framer Motion. It features custom components to animate paragraphs, words, and characters based on the scroll position, offering a unique visual experience as the content interacts with user actions.
 
