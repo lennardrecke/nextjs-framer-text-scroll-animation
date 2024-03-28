@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Text Scroll Animation
+## Description
+This project showcases dynamic text display techniques using Next.js and Framer Motion. It features custom components to animate paragraphs, words, and characters based on the scroll position, offering a unique visual experience as the content interacts with user actions.
 
-## Getting Started
+## Installation
+To get started with this project, clone the repository and install the dependencies:
 
-First, run the development server:
+```bash
+git clone github.com/lennardrecke/text-scroll-animation.git
+cd text-scroll-animation
+npm install
+```
+
+## Running the Project
+After installing the dependencies, you can run the project locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to http://localhost:3000 to view the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Components
+### page.tsx
+This is the main page component. It imports and uses the Paragraph, Word, and Character components to display a long paragraph in different animated formats, creating a visually engaging experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Paragraph.tsx
+Renders a paragraph where the opacity of the text dynamically changes based on the user's scroll position. It uses framer-motion for the scroll-based opacity animation, enhancing the visual interaction.
 
-## Learn More
+### Character.tsx
+Displays text where each character's visibility is animated based on scroll position. This component breaks down the text into individual characters and applies a unique animation to each, creating a detailed and engaging effect.
 
-To learn more about Next.js, take a look at the following resources:
+### Word.tsx
+Similar to Character.tsx, but animates each word's opacity as the user scrolls. This component focuses on animating words as a whole, offering a different visual approach compared to character-based animations.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Technologies Used
+- Next.js: A React framework for building single-page JavaScript applications.
+- Framer Motion: A library for React that makes it easy to create animated and interactive UIs.
+- Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contribution
+Contributions are welcome! Please submit a pull request or open an issue to discuss what you would like to change.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+MIT
